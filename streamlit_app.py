@@ -4,7 +4,8 @@ import numpy as np
 import streamlit as st
 
 def get_data():
-    gc = gspread.service_account(st.secrets['service_account'])
+    credentials = st.secrets['service_account']
+    gc = gspread.service_account_from_dict(credentials)
     wks = gc.open("pipeline-data").sheet1
     dataframe = pd.DataFrame(wks.get_all_records())
     
