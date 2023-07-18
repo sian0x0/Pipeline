@@ -2,3 +2,4 @@ __pycache__/*
 api_request_package/*
 data/*
 gspread_package/*
+.streamlit/secrets.toml
