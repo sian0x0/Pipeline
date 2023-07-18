@@ -4,7 +4,7 @@ import numpy as np
 import streamlit as st
 
 def get_data():
-    gc = gspread.service_account(filename="/home/sian/Documents/Code Academy/Code/3-6 Pipeline/data/service_account.json")
+    gc = gspread.service_account(st.secrets['service_account'])
     wks = gc.open("pipeline-data").sheet1
     dataframe = pd.DataFrame(wks.get_all_records())
     
