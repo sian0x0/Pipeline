@@ -20,4 +20,4 @@ st.text("Hostess Brands Inc (TWNK) daily closing stock price (US $)")
 st.line_chart(graph_data.rename(columns={'Date':'index'}).set_index('index'))
 
 st.button('Invest!') 
-st.image(["https://www.vhv.rs/dpng/d/540-5404019_transparent-twinkie-png-cheesecake-png-download.png", "https://www.vhv.rs/dpng/d/540-5404019_transparent-twinkie-png-cheesecake-png-download.png"])
+st.image(["https://www.hostesscakes.com/wp-content/uploads/2020/03/HST_TWINK_Hero_Original_Cut.png", "https://www.hostesscakes.com/wp-content/uploads/2020/03/HST_TWINK_Hero_Original_Cut.png"])
