@@ -15,7 +15,7 @@ graph_data = get_data()
 
 st.video("https://d1io3yog0oux5.cloudfront.net/_2199c089e968c5816a59e11eeedd0b5e/hostessbrands/db/871/8254/video_mp4/hostess-home.mp4")
 
-st.title("Twinkies are Forever")
+st.title(":red[Twinkies] are Forever")
 st.text("Hostess Brands Inc (TWNK) daily closing stock price (US $)")
 st.line_chart(graph_data.rename(columns={'Date':'index'}).set_index('index'))
 
