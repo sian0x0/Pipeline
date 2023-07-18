@@ -12,10 +12,9 @@ def get_data():
     return dataframe
 
 graph_data = get_data()
-
-st.video("https://d1io3yog0oux5.cloudfront.net/_2199c089e968c5816a59e11eeedd0b5e/hostessbrands/db/871/8254/video_mp4/hostess-home.mp4")
-st.image("https://www.hostesscakes.com/wp-content/uploads/2020/03/HST_TWINK_Hero_Original_Cut.png")
+st.image(("https://www.candyrush.nz/cdn/shop/products/Hostess-Twinkie-Original-Unwrapped.png", width = 50), ("https://www.candyrush.nz/cdn/shop/products/Hostess-Twinkie-Original-Unwrapped.png", width = 50), ("https://www.candyrush.nz/cdn/shop/products/Hostess-Twinkie-Original-Unwrapped.png", width = 50))
 st.title(":red[Twinkies] are Forever")
 st.text("Hostess Brands Inc (TWNK) daily closing stock price (US $)")
 st.line_chart(graph_data.rename(columns={'Date':'index'}).set_index('index'))
 st.button('Invest!') 
+st.video("https://d1io3yog0oux5.cloudfront.net/_2199c089e968c5816a59e11eeedd0b5e/hostessbrands/db/871/8254/video_mp4/hostess-home.mp4")
