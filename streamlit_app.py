@@ -12,7 +12,7 @@ def get_data():
     return dataframe
 
 graph_data = get_data()
-st.image(("https://www.candyrush.nz/cdn/shop/products/Hostess-Twinkie-Original-Unwrapped.png", width = 50), ("https://www.candyrush.nz/cdn/shop/products/Hostess-Twinkie-Original-Unwrapped.png", width = 50), ("https://www.candyrush.nz/cdn/shop/products/Hostess-Twinkie-Original-Unwrapped.png", width = 50))
+st.image("https://www.candyrush.nz/cdn/shop/products/Hostess-Twinkie-Original-Unwrapped.png")
 st.title(":red[Twinkies] are Forever")
 st.text("Hostess Brands Inc (TWNK) daily closing stock price (US $)")
 st.line_chart(graph_data.rename(columns={'Date':'index'}).set_index('index'))
