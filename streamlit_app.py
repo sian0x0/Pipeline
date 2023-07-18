@@ -19,4 +19,5 @@ st.title(":red[Twinkies] are Forever")
 st.text("Hostess Brands Inc (TWNK) daily closing stock price (US $)")
 st.line_chart(graph_data.rename(columns={'Date':'index'}).set_index('index'))
 
-st.button('Invest!')
+st.button('Invest!') 
+st.image(["https://www.vhv.rs/dpng/d/540-5404019_transparent-twinkie-png-cheesecake-png-download.png", "https://www.vhv.rs/dpng/d/540-5404019_transparent-twinkie-png-cheesecake-png-download.png"])
