@@ -10,7 +10,7 @@ def Dictify(a):
 
 def get_data():
     credentials = Dictify(st.secrets['service_account'])
-    gc = gspread.service_account_from_dict(credentials)
+    gc, authorized_user = gspread.service_account_from_dict(credentials)
     wks = gc.open("pipeline-data").sheet1
     dataframe = pd.DataFrame(wks.get_all_records())
     
